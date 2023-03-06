@@ -1,0 +1,124 @@
+// In this code we are gonna discuss about Map in JavaScript
+// Map is a collection of keyed data items, just like an Object. But the main difference is that Map allows keys of any type.
+// Teach me map method in js step by step as I am a 10 year old kid
+// For example: 
+const mapMethod= new Map()
+mapMethod.set('First object on map', 1)
+mapMethod.set('Second object on map', 2)
+mapMethod.set('Third object on map', 3)
+mapMethod.set('Fourth object on map', 4)
+mapMethod.set('Fifth object on map', 5)
+mapMethod.set('Sixth object on map', 6)
+mapMethod.set('Seventh object on map', 7)
+mapMethod.set('Eighth object on map', 8)
+mapMethod.set('Ninth object on map', 9)
+mapMethod.set('Tenth object on map', 10)
+console.log(mapMethod)
+// Here we can see that the mapMethod has 10 key-value pairs.
+// Now we will see how to get the value of a particular key by using the get() method:
+console.log(mapMethod.get('First object on map'))
+console.log(mapMethod.get('Second object on map'))
+console.log(mapMethod.get('Third object on map'))
+console.log(mapMethod.get('Fourth object on map'))
+console.log(mapMethod.get('Fifth object on map'))
+console.log(mapMethod.get('Sixth object on map'))
+console.log(mapMethod.get('Seventh object on map'))
+console.log(mapMethod.get('Eighth object on map'))
+console.log(mapMethod.get('Ninth object on map'))
+console.log(mapMethod.get('Tenth object on map'))
+// Now we will see how to check if the Map has a particular key or not by using the has() method:
+console.log(`It is ${mapMethod.has('First object on map')} that the Map has the key First object on map.`)
+console.log(`It is ${mapMethod.has('Second object on map')} that the Map has the key Second object on map.`)
+console.log(`It is ${mapMethod.has('Third object on map')} that the Map has the key Third object on map.`)
+console.log(`It is ${mapMethod.has('Fourth object on map')} that the Map has the key Fourth object on map.`)
+console.log(`It is ${mapMethod.has('Fifth object on map')} that the Map has the key Fifth object on map.`)
+console.log(`It is ${mapMethod.has('Sixth object on map')} that the Map has the key Sixth object on map.`)
+console.log(`It is ${mapMethod.has('Seventh object on map')} that the Map has the key Seventh object on map.`)
+console.log(`It is ${mapMethod.has('Eighth object on map')} that the Map has the key Eighth object on map.`)
+
+// Now we will see how to delete a key from the Map by using the delete() method:
+mapMethod.delete('First object on map')
+mapMethod.delete('Second object on map')
+mapMethod.delete('Third object on map')
+mapMethod.delete('Fourth object on map')
+mapMethod.delete('Fifth object on map')
+mapMethod.delete('Sixth object on map')
+mapMethod.delete('Seventh object on map')
+mapMethod.delete('Eighth object on map')
+mapMethod.delete('Ninth object on map')
+mapMethod.delete('Tenth object on map')
+console.log(mapMethod) // Here we can see that the mapMethod is cleared.
+// Now we will see how to get the number of key-value pairs in the map by using the size property:
+console.log(`Here is the size of the Map: ${mapMethod.size}`)
+// Now we will see how to clear the Map by using the clear() method:
+mapMethod.clear()
+console.log(`The map after clearing by using clear method ${mapMethod}`) // Here we can see that the Map is cleared.
+
+// Now we will see how to iterate over the Map by using the for..of loop:
+// For example: 
+const forOfLoop= new Map()
+forOfLoop.set('First object on map', 1)
+forOfLoop.set('Second object on map', 2)
+forOfLoop.set('Third object on map', 3)
+forOfLoop.set('Fourth object on map', 4)
+forOfLoop.set('Fifth object on map', 5)
+forOfLoop.set('Sixth object on map', 6)
+forOfLoop.set('Seventh object on map', 7)
+forOfLoop.set('Eighth object on map', 8)
+forOfLoop.set('Ninth object on map', 9)
+forOfLoop.set('Tenth object on map', 10)
+for (const key of forOfLoop) {
+  console.log(key)
+}
+// Here we can see that the Map is iterated using the for..of loop.
+// Now we will see how to iterate over the Map by using the forEach() method:
+// For example:
+const forEachMethod= new Map()
+forEachMethod.set('First object on map', 1)
+forEachMethod.set('Second object on map', 2)
+forEachMethod.set('Third object on map', 3)
+forEachMethod.set('Fourth object on map', 4)
+forEachMethod.set('Fifth object on map', 5)
+forEachMethod.set('Sixth object on map', 6)
+forEachMethod.set('Seventh object on map', 7)
+forEachMethod.set('Eighth object on map', 8)
+forEachMethod.set('Ninth object on map', 9)
+forEachMethod.set('Tenth object on map', 10)
+forEachMethod.forEach((value, key, map) => {
+  console.log(`${key}: ${value}`)
+})
+// Here we can see that the Map is iterated using the forEach() method.
+// Now we will see how to create an Array from the Map by using the Array.from() method:
+// For example:
+const arrayFromMethod= new Map()
+arrayFromMethod.set('First object on map', 1)
+arrayFromMethod.set('Second object on map', 2)
+arrayFromMethod.set('Third object on map', 3)
+arrayFromMethod.set('Fourth object on map', 4)
+arrayFromMethod.set('Fifth object on map', 5)
+arrayFromMethod.set('Sixth object on map', 6)
+arrayFromMethod.set('Seventh object on map', 7)
+arrayFromMethod.set('Eighth object on map', 8)
+arrayFromMethod.set('Ninth object on map', 9)
+arrayFromMethod.set('Tenth object on map', 10)
+const arrayFromMap= Array.from(arrayFromMethod)
+console.log(arrayFromMap)
+// Here we can see that the Array is created from the Map using the Array.from() method.
+// Now we will see how to create a Map from an Array by using the Map() constructor:
+// For example:
+const arrayFromConstructor= new Map([
+  ['First object on map', 1],
+  ['Second object on map', 2],
+  ['Third object on map', 3],
+  ['Fourth object on map', 4],
+  ['Fifth object on map', 5],
+  ['Sixth object on map', 6],
+  ['Seventh object on map', 7],
+  ['Eighth object on map', 8],
+  ['Ninth object on map', 9],
+  ['Tenth object on map', 10]
+])
+console.log(arrayFromConstructor)
+// Here we can see that the Map is created from the Array using the Map() constructor.
+// Now we will see how to create a Map from an Object by using the Object.entries() method:
+// For example:
