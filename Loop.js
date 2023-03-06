@@ -10,3 +10,4 @@ while (n<5) {
     n++ // n=n+1 or n+=1
 }
 
+// Below we will be giving an example of for of lo
