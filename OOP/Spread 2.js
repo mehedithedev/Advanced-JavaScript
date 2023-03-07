@@ -16,6 +16,14 @@ const bird={
         console.log(`Flying`)
     }
 }
+const anotherAnimal={
+    wheels: 0,
+    canFly: false,
+    canSwim: false,
+    canRun: true,
+}
+const infoAboutAnotherAnimal= {...anotherAnimal}
+console.log(infoAboutAnotherAnimal.canFly)
 const flyingCar= {...flying.fly(), ...car.drive()}
 // console.log(flyingCar)
 
@@ -42,6 +50,7 @@ obj2.age= 40
 
 console.log(obj1)
 console.log(obj2)
+
 // Why canada is the best country in the world?
 // Because it is the only country in the world where you can go to the store and buy a bag of maple syrup for $5 and then go to the gas station and fill up your car with gas for $5.
 // Second reason is: in canada you can go out in the woods and cut down a tree, bring it home, and burn it in your fireplace for heat.
